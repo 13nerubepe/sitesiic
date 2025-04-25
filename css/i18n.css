@@ -1,0 +1,11 @@
+#lang-select {
+    font-size: 16px;
+    padding: 5px;
+    display: flex;
+    align-items: center; /* Centrer l'icône et le texte */
+}
+
+#lang-select i {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+    font-size: 18px; /* Ajuster la taille de l'icône */
+}
