@@ -1,229 +1,338 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html lang="fr">
 <head>
-    <title>All Services</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Nos Services - SI-IC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <!-- Custom style (optional) -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
-            padding-top: 40px;
-            padding-bottom: 40px;
         }
-        .btn-group-custom {
-            margin-bottom: 2rem;
-            gap: 10px;
-            flex-wrap: wrap;
+        .navbar {
+            background-color: white;
         }
-        .card {
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.2s;
+
+        .navbar a {
+            color: #31af36;
+            font-weight: 500;
         }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .box-icon-modern-icon {
-            font-size: 30px;
-            color: #0d6efd;
-            margin-bottom: 15px;
-        }
-        .box-icon-modern-title {
-            font-size: 1.2rem;
-            font-weight: 600;
+        header {
+            background: linear-gradient(135deg, #31af36, #4d9152);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            font-size: 2rem;
+            color: #31af36;
             margin-bottom: 10px;
         }
-        .box-icon-modern-text {
-            font-size: 0.95rem;
+        .cta-section {
+            background-color: #31af36;
+            color: white;
+            padding: 40px 20px;
             text-align: center;
-            color: #555;
+        }
+        .cta-section h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .btn-outline-light{
+            border: 1px solid green;
+            color: green;
+            background-color: transparent;
+        }
+        .btn-outline-light:hover {
+            border: 1px solid green;
+            background-color: #31af36;
+            color: white;
         }
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg px-4">
+    <div class="container-fluid">
+        <a href="index.html" class="btn btn-outline-light">← Retour</a>
+        <span class="navbar-brand mx-auto fw-bold text-white">SI-IC Services</span>
+    </div>
+</nav>
 
-<div class="container">
-    <!-- Boutons -->
-    <div class="d-flex justify-content-center btn-group-custom">
-        <button class="btn btn-outline-primary">Service 1</button>
-        <button class="btn btn-outline-primary">Service 2</button>
-        <button class="btn btn-outline-primary">Service 3</button>
-        <button class="btn btn-outline-primary">Service 4</button>
-        <button class="btn btn-outline-primary">Service 5</button>
-        <button class="btn btn-outline-primary">Service 6</button>
+<header>
+
+    <h1>Des solutions technologiques pour l’avenir de votre entreprise</h1>
+    <p>Chez SI-IC, nous transformons la complexité technologique en leviers de performance durable pour les entreprises modernes.</p>
+</header>
+
+<main class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos domaines d’expertise</h2>
+        <p class="text-muted">Explorez notre large éventail de services conçus pour propulser votre transformation digitale.</p>
     </div>
 
-    <!-- Cartes des services -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
-        <!-- Service Card -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
-            <article class="box-icon-modern box-icon-modern-2">
-                <div class="card p-3 text-center">
-                    <div class="box-icon-modern-icon">📞</div>
-                    <h5 class="box-icon-modern-title"><a href="#">SYSTÈME<br>D'INFORMATION</a></h5>
-                    <div class="box-icon-modern-decor"></div>
-                    <p class="box-icon-modern-text">Need specific software for your company? We are ready to develop it!</p>
-                </div>
-            </article>
-        </div>
-
-        <div class="col">
-            <div class="card p-3 text-center">
-                <div class="box-icon-modern-icon">💻</div>
-                <h5 class="box-icon-modern-title"><a href="#">DÉVELOPPEMENT<br>WEB</a></h5>
-                <p class="box-icon-modern-text">We build responsive websites tailored to your business.</p>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card p-3 text-center">
-                <div class="box-icon-modern-icon">📊</div>
-                <h5 class="box-icon-modern-title"><a href="#">ANALYSE<br>DE DONNÉES</a></h5>
-                <p class="box-icon-modern-text">Turn your raw data into business insights and decisions.</p>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card p-3 text-center">
-                <div class="box-icon-modern-icon">🔐</div>
-                <h5 class="box-icon-modern-title"><a href="#">CYBERSÉCURITÉ</a></h5>
-                <p class="box-icon-modern-text">Protect your business with our advanced security solutions.</p>
+            <div class="card p-4 text-center service-card h-100">
+                <div class="icon">🔧</div>
+                <h5 class="fw-semibold">Systèmes d'Information</h5>
+                <p class="text-muted">Audit SI, intégration d’ERP/CRM, cybersécurité, conformité RGPD et bien plus.</p>
             </div>
         </div>
         <div class="col">
-            <div class="card p-3 text-center">
-                <div class="box-icon-modern-icon">📞</div>
-                <h5 class="box-icon-modern-title"><a href="#">SYSTÈME<br>D'INFORMATION</a></h5>
-                <p class="box-icon-modern-text">Need specific software for your company? We are ready to develop it!</p>
+            <div class="card p-4 text-center service-card h-100">
+                <div class="icon">☁️</div>
+                <h5 class="fw-semibold">Services Cloud & Infrastructure</h5>
+                <p class="text-muted">Migration cloud, hébergement sécurisé, DevOps et optimisation des coûts.</p>
             </div>
         </div>
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">💻</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">DÉVELOPPEMENT<br>WEB</a></h5>-->
-<!--                <p class="box-icon-modern-text">We build responsive websites tailored to your business.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📊</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">ANALYSE<br>DE DONNÉES</a></h5>-->
-<!--                <p class="box-icon-modern-text">Turn your raw data into business insights and decisions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">🔐</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">CYBERSÉCURITÉ</a></h5>-->
-<!--                <p class="box-icon-modern-text">Protect your business with our advanced security solutions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📞</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">SYSTÈME<br>D'INFORMATION</a></h5>-->
-<!--                <p class="box-icon-modern-text">Need specific software for your company? We are ready to develop it!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">💻</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">DÉVELOPPEMENT<br>WEB</a></h5>-->
-<!--                <p class="box-icon-modern-text">We build responsive websites tailored to your business.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📊</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">ANALYSE<br>DE DONNÉES</a></h5>-->
-<!--                <p class="box-icon-modern-text">Turn your raw data into business insights and decisions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">🔐</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">CYBERSÉCURITÉ</a></h5>-->
-<!--                <p class="box-icon-modern-text">Protect your business with our advanced security solutions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📞</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">SYSTÈME<br>D'INFORMATION</a></h5>-->
-<!--                <p class="box-icon-modern-text">Need specific software for your company? We are ready to develop it!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">💻</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">DÉVELOPPEMENT<br>WEB</a></h5>-->
-<!--                <p class="box-icon-modern-text">We build responsive websites tailored to your business.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📊</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">ANALYSE<br>DE DONNÉES</a></h5>-->
-<!--                <p class="box-icon-modern-text">Turn your raw data into business insights and decisions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">🔐</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">CYBERSÉCURITÉ</a></h5>-->
-<!--                <p class="box-icon-modern-text">Protect your business with our advanced security solutions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📞</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">SYSTÈME<br>D'INFORMATION</a></h5>-->
-<!--                <p class="box-icon-modern-text">Need specific software for your company? We are ready to develop it!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">💻</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">DÉVELOPPEMENT<br>WEB</a></h5>-->
-<!--                <p class="box-icon-modern-text">We build responsive websites tailored to your business.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">📊</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">ANALYSE<br>DE DONNÉES</a></h5>-->
-<!--                <p class="box-icon-modern-text">Turn your raw data into business insights and decisions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col">-->
-<!--            <div class="card p-3 text-center">-->
-<!--                <div class="box-icon-modern-icon">🔐</div>-->
-<!--                <h5 class="box-icon-modern-title"><a href="#">CYBERSÉCURITÉ</a></h5>-->
-<!--                <p class="box-icon-modern-text">Protect your business with our advanced security solutions.</p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="col">
+            <div class="card p-4 text-center service-card h-100">
+                <div class="icon">💡</div>
+                <h5 class="fw-semibold">Innovation & Transformation Digitale</h5>
+                <p class="text-muted">IA, IoT, blockchain, prototypage, conduite de changement agile.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card p-4 text-center service-card h-100">
+                <div class="icon">🧠</div>
+                <h5 class="fw-semibold">Conseil & Stratégie IT</h5>
+                <p class="text-muted">Feuille de route digitale, gouvernance SI, performance et KPI.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card p-4 text-center service-card h-100">
+                <div class="icon">👨‍💻</div>
+                <h5 class="fw-semibold">Développement sur mesure</h5>
+                <p class="text-muted">Applications web/mobile, APIs, interopérabilité, support et maintenance.</p>
+            </div>
+        </div>
     </div>
-</div>
+</main>
 
+<section class="cta-section">
+    <h3>Pourquoi choisir SI-IC ?</h3>
+    <ul class="list-unstyled">
+        <li>Expertise technologique & conseil stratégique</li>
+        <li>Équipes agiles et multidisciplinaires</li>
+        <li>Accompagnement global : stratégie à exécution</li>
+        <li>Culture centrée sur l’utilisateur et l’innovation</li>
+    </ul>
+    <p class="mt-4">Besoin d’un accompagnement sur mesure ? <strong>Contactez-nous</strong> pour discuter de votre projet ou demander un audit gratuit.</p>
+</section>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="fr">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Services - SI-IC</title>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    &lt;!&ndash; Google Fonts &ndash;&gt;-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">-->
+<!--    &lt;!&ndash; Bootstrap &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">-->
+<!--    &lt;!&ndash; Style custom &ndash;&gt;-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: 'Poppins', sans-serif;-->
+<!--            background-color: #f3f6f4;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        .navbar {-->
+<!--            background-color: #31af36;-->
+<!--        }-->
+
+<!--        .navbar a {-->
+<!--            color: white;-->
+<!--            font-weight: 500;-->
+<!--        }-->
+
+<!--        .hero {-->
+<!--            background: linear-gradient(135deg, #31af36, #4b964d);-->
+<!--            color: white;-->
+<!--            padding: 80px 20px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .hero h1 {-->
+<!--            font-size: 2.8rem;-->
+<!--            font-weight: 600;-->
+<!--        }-->
+
+<!--        .hero p {-->
+<!--            max-width: 800px;-->
+<!--            margin: 20px auto;-->
+<!--            font-size: 1.1rem;-->
+<!--        }-->
+
+<!--        .section-title {-->
+<!--            text-align: center;-->
+<!--            margin: 60px 0 30px;-->
+<!--        }-->
+
+<!--        .card-service {-->
+<!--            background: white;-->
+<!--            border: none;-->
+<!--            border-radius: 12px;-->
+<!--            padding: 30px 20px;-->
+<!--            text-align: center;-->
+<!--            transition: all 0.3s ease;-->
+<!--            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);-->
+<!--        }-->
+
+<!--        .card-service:hover {-->
+<!--            transform: translateY(-5px);-->
+<!--            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);-->
+<!--        }-->
+
+<!--        .card-service .icon {-->
+<!--            font-size: 2.5rem;-->
+<!--            margin-bottom: 15px;-->
+<!--            color: #4b964d;-->
+<!--        }-->
+
+<!--        .card-service h5 {-->
+<!--            font-weight: 600;-->
+<!--        }-->
+
+<!--        .card-service p {-->
+<!--            font-size: 0.95rem;-->
+<!--            color: #555;-->
+<!--        }-->
+
+<!--        .cta {-->
+<!--            background-color: #31af36;-->
+<!--            color: white;-->
+<!--            padding: 50px 20px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .cta h3 {-->
+<!--            font-weight: 600;-->
+<!--        }-->
+
+<!--        .cta p {-->
+<!--            font-size: 1.05rem;-->
+<!--        }-->
+
+<!--        footer {-->
+<!--            background-color: #4b964d;-->
+<!--            color: white;-->
+<!--            text-align: center;-->
+<!--            padding: 20px;-->
+<!--            margin-top: 40px;-->
+<!--        }-->
+
+<!--        @media (max-width: 768px) {-->
+<!--            .hero h1 {-->
+<!--                font-size: 2rem;-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash; Navigation &ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-lg px-4">-->
+<!--    <div class="container-fluid">-->
+<!--        <a href="javascript:history.back()" class="btn btn-outline-light">← Retour</a>-->
+<!--        <span class="navbar-brand mx-auto fw-bold text-white">SI-IC Services</span>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash; Hero &ndash;&gt;-->
+<!--<section class="hero">-->
+<!--    <h1>Solutions Technologiques pour Entreprises Modernes</h1>-->
+<!--    <p>Nous accompagnons les organisations dans leur transformation digitale grâce à des solutions robustes, innovantes et évolutives.</p>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Services &ndash;&gt;-->
+<!--<section class="container">-->
+<!--    <div class="section-title">-->
+<!--        <h2 class="fw-bold">Nos Services</h2>-->
+<!--        <p class="text-muted">Des solutions adaptées à chaque étape de votre évolution numérique</p>-->
+<!--    </div>-->
+
+<!--    <div class="row g-4">-->
+<!--        <div class="col-md-6 col-lg-4">-->
+<!--            <div class="card-service">-->
+<!--                <div class="icon">🔧</div>-->
+<!--                <h5>Systèmes d'Information</h5>-->
+<!--                <p>Audit SI, ERP/CRM, gestion des données, cybersécurité et conformité RGPD.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-4">-->
+<!--            <div class="card-service">-->
+<!--                <div class="icon">☁️</div>-->
+<!--                <h5>Cloud & Infrastructure</h5>-->
+<!--                <p>Migration cloud, hébergement sécurisé, DevOps et haute disponibilité.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-4">-->
+<!--            <div class="card-service">-->
+<!--                <div class="icon">💡</div>-->
+<!--                <h5>Innovation & Transformation</h5>-->
+<!--                <p>IA, IoT, blockchain, prototypage, automatisation, accompagnement agile.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-4">-->
+<!--            <div class="card-service">-->
+<!--                <div class="icon">🧠</div>-->
+<!--                <h5>Conseil & Stratégie IT</h5>-->
+<!--                <p>Feuille de route digitale, gouvernance SI, KPI et pilotage de performance.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-4">-->
+<!--            <div class="card-service">-->
+<!--                <div class="icon">👨‍💻</div>-->
+<!--                <h5>Développement sur mesure</h5>-->
+<!--                <p>Applications web/mobile, intégration API, interopérabilité et support.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Call to Action &ndash;&gt;-->
+<!--<section class="cta mt-5">-->
+<!--    <h3>Prêt pour la transformation digitale ?</h3>-->
+<!--    <p>Contactez-nous pour discuter de votre projet ou bénéficier d’un audit gratuit sur vos systèmes.</p>-->
+<!--    <a href="#contact" class="btn btn-light mt-3">Nous contacter</a>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer>-->
+<!--    &copy; 2025 SI-IC | Tous droits réservés-->
+<!--</footer>-->
+
+<!--&lt;!&ndash; Bootstrap JS &ndash;&gt;-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->

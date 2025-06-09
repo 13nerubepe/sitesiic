@@ -7308,6 +7308,16 @@ textarea.textarea-lg {
 	vertical-align: middle;
 }
 
+.drop-text {
+	font-weight: bold;
+	text-shadow:
+			1px 1px 0 #444,
+			2px 2px 0 #444,
+			3px 3px 0 #444,
+			4px 4px 0 #444,
+			5px 5px 0 #444;
+}
+
 .breadcrumbs-custom-path a, .breadcrumbs-custom-path a:active, .breadcrumbs-custom-path a:focus {
 	color: #151515;
 }
@@ -20152,8 +20162,8 @@ disabled look for disabled choices in the results dropdown
 
 #particles-js {
 	position: absolute;
-	min-width: 280px;
-	min-height: 280px;
+	min-width: 200px;
+	min-height: 200px;
 	top: 0;
 	left: 0;
 }
@@ -20281,3 +20291,24 @@ disabled look for disabled choices in the results dropdown
 	color: white;
 	font-weight: bold;
 }
+
+
+
+.icon-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #00bcd4; /* Couleur turquoise */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 28px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+
+
